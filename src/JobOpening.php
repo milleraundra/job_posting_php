@@ -3,7 +3,7 @@
     {
         private $job_title;
         private $job_description;
-        public $contact_info;
+        private $contact_info;
 
         function __construct($job_name, $job_details, $job_contact)
         {
@@ -30,6 +30,16 @@
         function getDescript()
         {
             return $this->job_description;
+        }
+
+        function setContact($job_contact)
+        {
+            $this->contact_info = $job_contact;
+        }
+
+        function getContact()
+        {
+            return $this->contact_info;
         }
 
 
